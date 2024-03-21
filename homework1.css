@@ -1,0 +1,129 @@
+body {
+    margin: 20px 40px;
+  }
+  
+  p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 16px;
+  }
+  
+  /*--- This is the CSS class for the green rectangular blocks. Note that it uses display: flex ---*/
+  .wrapper {
+    display: flex;
+    height: 60px;
+    background-color: green;
+    margin-bottom: 20px;
+  }
+  
+  /*--- flex: 1 makes it so that the div takes up all available space left in the parent element ---*/
+  .redExample {
+    flex: 1;
+    background-color: red;
+  }
+  
+  /*--- Since both .redExample and .blueExample have flex: 1, they will take up an equal amount of space because they meet in the middle ---*/
+  .blueExample {
+    flex: 1;
+    background-color: blue;
+  }
+  
+  /*--- flex-direction: row-reverse orders all child elements starting from right to left ---*/
+  .emptyExample2 {
+    display: flex;
+    flex: 1;
+    flex-direction: row-reverse;
+  }
+  
+  .blueExample2 {
+    width: 80px;
+    background-color: blue;
+  }
+  
+  /* TODO: Add CSS for the rest of your solution below */
+
+  
+  .wrapper .child8:nth-child(even) {
+    background-color: green;
+    flex: 5;
+  }
+  .wrapper .child8:nth-child(odd) {
+    background-color: orange;
+    flex: 1;
+  }
+  
+  
+  .wrapper .child9:nth-child(even) {
+    background-color: green;
+    flex: 1;
+  }
+  .wrapper .child9:nth-child(odd) {
+    background-color: orange;
+    flex: 12;
+  }
+
+
+  .childw31 {
+    flex: 1;
+    background-color: red;
+  }
+  .childw32 {
+    flex: 26;
+    background-color: green;
+  }
+  .childw33 {
+    flex: 1;
+    background-color: blue;
+  }
+
+
+  .childw41 {
+    flex: 27;
+    background-color: red;
+  }
+  .childw42 {
+    flex: 1;
+    background-color: blue;
+  }
+
+
+  .childw51 {
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    margin-left: 49%;
+  }
+  
+  
+  .childw61 {
+    flex: 13;
+    background-color: red;
+  }
+  .childw62 {
+    flex: 1;
+    background-color: blue;
+  }
+  .childw63 {
+    flex: 13;
+    background-color: red;
+  }
+
+
+  .wrapper7 {
+    display: flex;
+    height: 60px;
+    background-color: blue;
+    margin-bottom: 20px;
+  }
+  .childw71 {
+    flex: 1;
+    background-color: red;
+  }
+  .childw72 {
+    flex: 24;
+    height: 20px;
+    background-color: green;
+    align-self: center;
+  }
