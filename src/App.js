@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Post from './Post';
+import Header from './Header';
+import Intro from './Intro';
+import Footer from './Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+      <Intro/>
+      <div id="cardscolumn" style={{ display: 'flex', flexDirection: 'column', width: '1440px', height: '1152px', padding: '0px 160px 0px 160px', gap: '40px' }}>
+        <Post/>
+      </div>
+      <Footer/>
     </div>
   );
 }
